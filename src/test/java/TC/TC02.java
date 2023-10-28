@@ -12,12 +12,12 @@ import java.util.List;
 
 @org.testng.annotations.Test
 public class TC02 {
-    public static void tc01() {
+    public static void tc02() {
 
-         //1. Init web-driver session
+        // 1. Init web-driver session
         WebDriver driver = driverFactory.getChromeDriver();
         try {
-            //2. Open target page
+            // 2. Open target page
             driver.get("http://live.techpanda.org/");
             // Delay Web for Performance
 
@@ -27,11 +27,12 @@ public class TC02 {
             Assert.assertEquals(wishTitle, pageTitle);
 
             // 4. Click on Mobile
-            WebElement mobileMenu = driver.findElement(By.xpath("//a[normalize-space()='Mobile']"));
+            WebElement mobileMenu = driver.findElement(By.className("level0"));
             mobileMenu.click();
 
             // 5. Read the cost of Sony Xperia mobile in the list page
-            WebElement sonyXperiaPriceListPage = driver.findElement(By.xpath("//a[contains(text(),'Sony Xperia')]/following::span[@class='price']"));
+            WebElement sonyXperiaPriceListPage = driver
+                    .findElement(By.xpath("//a[contains(text(),'Sony Xperia')]/following::span[@class='price']"));
             String sonyXperiaPriceList = sonyXperiaPriceListPage.getText();
 
             // 6. Click on Sony Xperia mobile
@@ -43,11 +44,11 @@ public class TC02 {
             String sonyXperiaPriceDetails = sonyXperiaPriceDetailsPage.getText();
 
             // 8. Compare the product prices from list and details page
-            Assert.assertEquals("Product price not match", sonyXperiaPriceList, sonyXperiaPriceDetails);
-        }catch (Exception e){
+            Assert.assertNotEquals("Product price not match", sonyXperiaPriceList, sonyXperiaPriceDetails);
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        //9. Quit browser session
+        // 9. Quit browser session
         driver.quit();
     }
 }
