@@ -38,7 +38,7 @@ Test Steps:
 
 1. Goto http://live.techpanda.org/
 
-2. Click on �MOBILE� menu
+2. Click on -> MOBILE -> menu
 
 3. In the list of all mobile , read the cost of Sony Xperia mobile (which is $100)
 
@@ -63,17 +63,15 @@ Test Steps:
 
 1. Go to http://live.techpanda.org/
 
-2. Click on �MOBILE� menu
+2. Click on -> MOBILE -> menu
 
-3. In the list of all mobile , click on �ADD TO CART� for Sony Xperia mobile
+3. In the list of all mobile , click on -> ADD TO CART for " Sony Xperia " mobile
 
-4. Change �QTY� value to 1000 and click �UPDATE� button. Expected that an error is displayed
-
-"The requested quantity for "Sony Xperia" is not available.
+4. Change "QTY' value to '1000' and click -> UPDATE -> button. Expected that an error is displayed " The requested quantity for "Sony Xperia" is not available. "
 
 5. Verify the error message
 
-6. Then click on �EMPTY CART� link in the footer of list of all mobiles. A message "SHOPPING CART IS EMPTY" is shown.
+6. Then click on -> EMPTY CART -> link in the footer of list of all mobiles. A message "SHOPPING CART IS EMPTY" is shown.
 
 7. Verify cart is empty
 
@@ -89,11 +87,11 @@ Test Steps:
 
 1. Go to http://live.techpanda.org/
 
-2. Click on �MOBILE� menu
+2. Click on -> MOBILE -> menu
 
-3. In mobile products list , click on �Add To Compare� for 2 mobiles (Sony Xperia & Iphone)
+3. In mobile products list , click on -> Add To Compare -> for 2 mobiles (Sony Xperia & Iphone)
 
-4. Click on �COMPARE� button. A popup window opens
+4. Click on -> COMPARE button. A popup window opens
 
 5. Verify the pop-up window and check that the products are reflected in it
 
@@ -102,7 +100,6 @@ Heading "COMPARE PRODUCTS" with selected products in it.
 6. Close the Popup Windows
 
 */
-
 
 --------------------------------TESTCASE05--------------------------------------
 
