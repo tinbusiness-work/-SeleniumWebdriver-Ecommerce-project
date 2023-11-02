@@ -38,7 +38,7 @@ Test Steps:
 
 1. Goto http://live.techpanda.org/
 
-2. Click on �MOBILE� menu
+2. Click on -> MOBILE -> menu
 
 3. In the list of all mobile , read the cost of Sony Xperia mobile (which is $100)
 
@@ -51,13 +51,146 @@ Test Steps:
 */
 
 ----------------------------TC03------------------------------------------
+Hey there,
 
+The client wants to automate the scenario:
 
+“Verify that you cannot add more product in cart than the product available in store”
 
+/*
 
+Test Steps:
 
+1. Go to http://live.techpanda.org/
 
-The client has requested you to use WebDriver (Chrome Driver) for the project. Go ahead and record the script in Webdriver.
+2. Click on -> MOBILE -> menu
+
+3. In the list of all mobile , click on -> ADD TO CART for " Sony Xperia " mobile
+
+4. Change "QTY' value to '1000' and click -> UPDATE -> button. Expected that an error is displayed " The requested quantity for "Sony Xperia" is not available. "
+
+5. Verify the error message
+
+6. Then click on -> EMPTY CART -> link in the footer of list of all mobiles. A message "SHOPPING CART IS EMPTY" is shown.
+
+7. Verify cart is empty
+
+---------------------------------------------------TC04-------------------------------------------
+
+The next scenario is “Verify that you are able to compare two product”
+
+This will need you to work with pop-ups.
+
+/*
+
+Test Steps:
+
+1. Go to http://live.techpanda.org/
+
+2. Click on -> MOBILE -> menu
+
+3. In mobile products list , click on -> Add To Compare -> for 2 mobiles (Sony Xperia & Iphone)
+
+4. Click on -> COMPARE button. A popup window opens
+
+5. Verify the pop-up window and check that the products are reflected in it
+
+Heading "COMPARE PRODUCTS" with selected products in it.
+
+6. Close the Popup Windows
+
+*/
+
+--------------------------------TESTCASE05--------------------------------------
+
+The next scenario is “Verify you can create account in E-commerce site and can share wishlist to other people using email”
+
+Detailed Test Case is below
+
+/* Verify can create an account in e-Commerce site and can share wishlist to other poeple using email.
+
+Test Steps:
+
+1. Go to http://live.techpanda.org/
+
+2. Click on my account link
+
+3. Click Create an Account link and fill New User information excluding the registered Email ID.
+
+4. Click Register
+
+5. Verify Registration is done. Expected account registration done.
+
+6. Go to TV menu
+
+7. Add product in your wish list - use product - LG LCD
+
+8. Click SHARE WISHLIST
+
+9. In next page enter Email and a message and click SHARE WISHLIST
+
+10.Check wishlist is shared. Expected wishlist shared successfully.
+
+Note: 
+
+- build Register page as POM.
+
+- code for switching to new window:
+
+// switching to new window
+for (String handle : driver.getWindowHandles()) {
+    driver.switchTo().window(handle);
+}
+*/
+
+-----------------------TESTCASE06-------------------------                
+
+Hey there,
+
+The next scenario is:
+
+/* Verify user is able to purchase product using registered email id (USE CHROME BROWSER)
+
+Test Steps:
+
+1. Go to http://live.techpanda.org/
+
+2. Click on my account link
+
+3. Login in application using previously created credential
+
+4. Click on MY WISHLIST link
+
+5. In next page, Click ADD TO CART link
+
+6. Enter general shipping country, state/province and zip for the shipping cost estimate
+
+7. Click Estimate
+
+8. Verify Shipping cost generated
+
+9. Select Shipping Cost, Update Total
+
+10. Verify shipping cost is added to total
+
+11. Click "Proceed to Checkout"
+
+12a. Enter Billing Information, and click Continue
+
+12b. Enter Shipping Information, and click Continue
+
+13. In Shipping Method, Click Continue
+
+14. In Payment Information select 'Check/Money Order' radio button. Click Continue
+
+15. Click 'PLACE ORDER' button
+
+16. Verify Oder is generated. Note the order number
+
+Note: 
+
+- Build CartPage/CheckOutPage/LoginPage as POM
+
 
 Good luck!
 
