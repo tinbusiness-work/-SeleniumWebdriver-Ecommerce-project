@@ -15,7 +15,7 @@ public class TC05 {
         String firstname ="Tin";
         String middlename ="Trung";
         String lastname ="Huynh";
-        String email_address ="tin14@gmail.com";
+        String email_address ="tin16@gmail.com";
         String password ="123456";
         String confirmation = "123456";
 
