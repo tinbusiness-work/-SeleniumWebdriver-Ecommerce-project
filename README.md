@@ -191,6 +191,56 @@ Note:
 
 - Build CartPage/CheckOutPage/LoginPage as POM
 
+*/--------------TESTCASE07-------------------------/* 
+
+Verify that you will be able to save previously placed order as a pdf file
+
+Test Steps:
+
+1. Go to http://live.techpanda.org/
+
+2. Click on My Account link
+
+3. Login in application using previously created credential
+
+4. Click on 'My Orders'
+
+5. Click on 'View Order'
+
+6. Click on 'Print Order' link
+
+Go ahead and code the script.
+
+Good luck!
+
+*/--------------TESTCASE08-------------------------/
+
+*  Verify you are able to change or reorder previously added product
+
+ *  Test Data = QTY = 10
+
+Test Steps:
+
+1. Go to http://live.techpanda.org/
+
+2. Click on my account link
+
+3. Login in application using previously created credential
+
+4. Click on 'REORDER' link , change QTY & click Update
+
+5. Verify Grand Total is changed
+
+6. Complete Billing & Shipping Information
+
+7. Verify order is generated and note the order number
+
+Expected outcomes:
+
+1) Grand Total is Changed
+
+2) Order number is generated
+
 
 Good luck!
 
