@@ -19,6 +19,10 @@ public class CartPage {
     By updateTotal = By.xpath("//button[@class='button']");
     By checkOutProccess = By.xpath("(//button[@title='Proceed to Checkout'])[2]");
 
+    By reOrderLink = By.xpath("//a[@class='link-reorder']");
+    By enterQTY = By.xpath("//input[@class='input-text qty']");
+    By updateQTYButton = By.xpath("//button[@title='Update']");
+
     public CartPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -68,4 +72,17 @@ public class CartPage {
         driver.findElement(checkOutProccess).click();
     }
 
+    public void setReOrderLink(){
+        driver.findElement(reOrderLink).click();
+    }
+
+    public void setEnterQTY(String qty) {
+        WebElement qtyElement = driver.findElement(enterQTY);
+        qtyElement.clear(); // clear the QTY before
+        qtyElement.sendKeys(qty);
+    }
+
+    public void setUpdateQTYButton(){
+        driver.findElement(updateQTYButton).click();
+    }
 }

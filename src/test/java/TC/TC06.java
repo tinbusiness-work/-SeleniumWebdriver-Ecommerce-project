@@ -181,11 +181,23 @@ public class TC06 {
             checkOutPage.setPlaceOrderButton();
             Thread.sleep(2000);
 
+
             //16.Verify Oder is generated. Note the order number
+
+            // Verify if the order is generated
             WebElement yourOrder = driver.findElement(By.xpath("//h1[text()='Your order has been received.']"));
             String expectedOrder = "YOUR ORDER HAS BEEN RECEIVED.";
+            String orderNumber = "";
+
             try {
                 Assert.assertEquals(expectedOrder, yourOrder.getText());
+
+                // Get the order number
+                WebElement orderNumberElement = driver.findElement(By.xpath("//div[@class='col-main']//a"));
+                orderNumber = orderNumberElement.getText();
+
+                // Print the order number
+                System.out.println("Order Number: " + orderNumber);
             } catch (Exception e) {
                 e.printStackTrace();
             }
