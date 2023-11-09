@@ -241,6 +241,52 @@ Expected outcomes:
 
 2) Order number is generated
 
+   
+*/--------------TESTCASE09-------------------------*/
+
+/*  Verify Discount Coupon works correctly
+
+Test Case Description:
+
+1. Go to http://live.techpanda.org/
+
+2. Go to Mobile and add IPHONE to cart
+
+3. Enter Coupon Code
+
+4. Verify the discount generated
+
+TestData:  Coupon Code: GURU50
+
+Expected result:
+
+1) Price is discounted by 5%
+
+*/
+
+*/--------------------------TESTCASE10---------------------------------*/
+
+The client wants you to work on the scenario “Export all Orders in csv file and display these information in console and you are able to send this file to another email id as attachment”
+
+/* Test Case requirements/descriptions:
+ *    Export all Orders in csv file and display these information in console and
+ *    you are able to send this file to another email id as attachment
+ * Note: Access to backend of the site. UserId "user01" and pw "user001"
+ *
+1. Go to http://live.techpanda.org/index.php/backendlogin
+2. Login the credentials provided
+3. Go to Sales-> Orders menu
+4. Select 'CSV' in Export To dropdown and click Export button.
+
+Expected results:
+1) File is downloaded successfully with full information.
+*/
+
+Backed Login Credentials (without quotes)
+
+id = "user01"
+
+pass = "guru99com"
 
 Good luck!
 
