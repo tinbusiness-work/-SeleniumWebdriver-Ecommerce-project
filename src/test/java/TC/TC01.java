@@ -1,20 +1,17 @@
 package TC;
 
 import driver.driverFactory;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.junit.Assert;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 @org.testng.annotations.Test
-public class TC01 {
+public class  TC01 {
     public static void tc01() {
 
          //1. Init web-driver session
